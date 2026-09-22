@@ -8,57 +8,92 @@ body {
     background-color:darkslateblue;
 }
 
+@media (max-width: 768px) {
+    .login-header {
+        margin-top: 170px;
+    }
+}
 .login-header {
     display: flex;
-    font-size: 50px;
-    justify-content: center;
-    margin-top: 20%;
+    font-size: 30px;
+    align-items: center;
+    justify-self: center;
+    max-width: 310px;
+    margin-top: 120px;
     color: white;
 }
 
 .go-n-create-account {
+    display: flexbox;
+    justify-self: center;
+    margin-top: 12px;
+    color: white;
+}
+
+.login-form, [type='text'], [type='password'] {
+    display: flexbox;
+    justify-self: center;
+
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    font-weight: bold;
+}
+
+.login-form #login-button {
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 310px;
+    font-weight: bold;
+}
+
+.register-form {
+    display: flexbox;
+    justify-self: center;
+    margin-top: 30px;
+}
+
+.register-form #register-button {
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 310px;
+    font-weight: bold;
+}
+
+.login-to-account {
     display: flex;
     justify-content: center;
     margin-top: 12px;
     color: white;
 }
 
-.go-n-create-account #sign-up-link {
-    padding-left: 5px;
-}
-
-.form {
-    display: flexbox;
-    justify-self: center;
-    margin-top: 30px;
-}
-
-.form #email {
-    border-width: 0px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
-    width: 230px;
-    font-weight: bold;
-}
-
-.form #password {
-    border-width: 0px;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
-    width: 230px;
-    font-weight: bold;
-}
-
-.form #login-button {
+.first-n-last-name {
     display: flex;
-    justify-content: center;
-    border-width: 0px;
-    border-radius: 5px;
-    padding: 5px;
+    width: 135px;
+    flex-grow: 1;
+}
+
+.create-account-container {
+    display: flex-box;
+    justify-self: center;
+    max-width: 310px;
+}
+
+.login-container {
+    display: flex-box;
+    justify-self: center;
+    max-width: 310px;
+}
+
+#terms-n-agreement {
     margin: 10px;
-    width: 241px;
-    font-weight: bold;
-    background-color:cornflowerblue
+    color: white;
 }

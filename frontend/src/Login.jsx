@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Login = () => {
+const Login = ({ showRegister, setShowRegister}) => {
   return (
-    <div>
-        <h1 className="login-header">Login...</h1>
-        <p className="go-n-create-account">Don't have an account? <a href="/" id="sign-up-link"> Sign Up</a></p>
-      <form className="form">
+    <div className="login-container">
+        <h1 className="login-header">Welcome back</h1>
+        <p className="go-n-create-account">Don't have an account? <button onClick={() => setShowRegister(!showRegister)}>
+        {showRegister ? 'Log in' : 'Create account'}
+      </button></p>
+      <form className="login-form">
         <div>
         <label htmlFor="email"></label>
         <input 
@@ -21,7 +23,7 @@ const Login = () => {
             id="password"
             type="password"
             required
-            placeholder="Password"
+            placeholder="Enter your password"
         />
         </div>
         <button id="login-button" type="submit">Login</button>
